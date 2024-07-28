@@ -1,5 +1,5 @@
       // Step 4. load your data with d3.csv()
-      d3.csv("../data/image_directory.csv")
+      d3.csv("data/image_directory.csv")
       // d3.json("happiness-sample-data.json")
         .then(data => {
 
