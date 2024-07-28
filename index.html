@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+
+    <!-- some basic stuff  -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Animated SVG</title>
+
+    <!-- 
+      add your stylesheet 
+      base.css loads the basic stuff
+      you can tweak your css in custom.css
+      WARNING: the order of the stylesheets matters
+    -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/custom.css">
+
+    <!-- add your d3 script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <!-- add Scrollama -->
+    <script src="https://unpkg.com/scrollama"></script>
+
+    <!-- your JS code that uses d3 to manipulate data -->
+    <script src="scripts/images.js"></script>
+
+  </head>
+  <body>
+    <div id="scroll-content">
+      <div id="my-svg-chart"></div>
+      <div id="text">
+        <div class="step">These are 180 headshots of <a style="font-weight: bold; color: #1f487e;">twentieth century movie stars</a> scraped from <a style="font-weight: bold; color: #eb5e28;">IMDb</a>.</div>
+        <div class="step">And these are another 180 <a style="font-weight: bold; color: #1f487e;">stars</a>.</div>
+        <div class="step">This is a prototype for my upcoming third project on the faces of Hollywood.</div>
+      </div>
+    </div>
+
+
+  </body>
+</html>
