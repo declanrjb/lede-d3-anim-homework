@@ -42,10 +42,16 @@
                 .duration(200)
                 .attr('width', 0)
                 .attr('height',0)
-                .transition()
-                .duration(500)
-                .attr('width', gridWidth)
-                .attr('height',gridHeight)
+                .on('end', function(d,i,k){
+                  
+                  d3.select(k[i])
+                  .attr('xlink:href', d[step])
+                  .transition()
+                  .duration(500)
+                  .attr('width', gridWidth)
+                  .attr('height',gridHeight)
+  
+                })
             }
 
 
